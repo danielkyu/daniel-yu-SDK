@@ -6,18 +6,13 @@
  * User Manual available at https://docs.gradle.org/7.4/userguide/building_java_projects.html
  */
 
-plugins {
-    id 'java'
-    id 'maven-publish'
-}
+apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 group = 'com.github.danielkyu'
-version = '1.0.0'
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-}
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -57,4 +52,9 @@ dependencies {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+wrapper {
+    gradleVersion = "7.4"
+    distributionType = Wrapper.DistributionType.ALL
 }
