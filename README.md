@@ -1,6 +1,6 @@
-# one-api-java-sdk
+# daniel-yu-SDK (one-api-java-sdk)
 
-A very minimal Java SDK for the-one-api.dev web service.
+A very minimal Java SDK for the-one-api.dev web service. Currently, this SDK only supports the movies API.
 
 ### Pre-requisites
 
