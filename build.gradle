@@ -49,9 +49,13 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 }
 
-tasks.named('test') {
-    // Use JUnit Platform for unit tests.
+tasks.withType(Test) {
     useJUnitPlatform()
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
+    }
 }
 
 wrapper {
