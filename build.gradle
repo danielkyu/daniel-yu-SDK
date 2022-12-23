@@ -13,6 +13,7 @@ plugins {
 }
 
 group = 'com.github.danielkyu'
+version = '1.0.0'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
