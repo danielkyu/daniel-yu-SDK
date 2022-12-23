@@ -1,0 +1,3 @@
+api-key: api-key-for-testing
+networking:
+  log-traffic: true
