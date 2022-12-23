@@ -77,6 +77,8 @@ oneApi.getMovies(
     });
 ```
 
+A reference sample project has been created [here](https://github.com/danielkyu/one-api-java-app) showcasing how to create an application that integrates with this SDK.
+
 ### Running the Unit Tests
 
 ```
