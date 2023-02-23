@@ -10,23 +10,23 @@ public class MovieResponse {
   @Data
   public static class Movie {
     @JsonProperty("_id")
-    public String id;
+    private String id;
 
-    public String name;
-    public int runtimeInMinutes;
-    public int budgetInMillions;
-    public int boxOfficeRevenueInMillions;
-    public int academyAwardNominations;
-    public int academyAwardWins;
-    public int rottenTomatoesScore;
+    private String name;
+    private int runtimeInMinutes;
+    private int budgetInMillions;
+    private int boxOfficeRevenueInMillions;
+    private int academyAwardNominations;
+    private int academyAwardWins;
+    private int rottenTomatoesScore;
   }
 
-  public int total;
-  public int limit;
-  public int offset;
-  public int page;
-  public int pages;
+  private int total;
+  private int limit;
+  private int offset;
+  private int page;
+  private int pages;
 
   @JsonProperty("docs")
-  public List<Movie> movies;
+  private List<Movie> movies;
 }
